@@ -21,8 +21,7 @@ public class Break2 {
 				}
 			}
 		}
-		
-		System.out.println(searchFor + " not in the array");
+		System.out.println(searchFor + " is not in the array");
 		
 	}
 }
