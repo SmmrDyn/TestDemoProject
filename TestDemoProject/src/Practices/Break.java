@@ -2,28 +2,28 @@ package Practices;
 
 public class Break {
 	public static void main(String[] args) {
-		int[] arrayOfInts =
-			{ 32, 87, 3, 589,
-				12, 1076, 2000,
-				8, 622, 127
+		int [] arrayofInts =
+			{
+				1, 2 ,3, 4, 5
 			};
-		int searchfor = 0;
-		
+		int searchFor = 2;
 		int i;
 		boolean foundIt = false;
 		
-		for ( i = 0; i < arrayOfInts.length; i++) {
-			if (arrayOfInts[i] == searchfor) {
+		for (i = 0; i < arrayofInts.length; i++) {
+			if ( arrayofInts[i] == searchFor) {
 				foundIt = true;
 				break;
 			}
 		}
 		
 		if (foundIt) {
-			System.out.println("Found " + searchfor + 
-					" at index " + i);
+			System.out.println(searchFor +
+				" is at index " + i);
 		} else {
-			System.out.println(searchfor + " is not in the array.");
+			System.out.println(searchFor +
+				" not in the array.");
 		}
+			
 	}
 }
