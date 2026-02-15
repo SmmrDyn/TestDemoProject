@@ -1,0 +1,21 @@
+package FileWriters;
+
+import java.io.FileWriter;
+import java.io.IOException;
+
+public class Main {
+
+	public static void main(String[] args) {
+		try {
+			FileWriter writer = new FileWriter("poem.txt");
+			writer.write("Roses are red \nViolets are blue \nRock n roll");
+			writer.append("\nA poem");
+			writer.close();
+		} catch (IOException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+
+	}
+
+}
